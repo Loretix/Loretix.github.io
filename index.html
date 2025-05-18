@@ -18,7 +18,7 @@
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg text-uppercase fixed-top" id="mainNav">
+        <nav class="navbar navbar-expand-lg text-uppercase fixed-top"" id="mainNav">
             <div class="container">
                 <button class="navbar-toggler text-uppercase font-weight-bold rounded" style="color: #442251; " type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
@@ -26,8 +26,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" style="color: #442251;" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" style="color: #442251;" href="#about">Tools</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" style="color: #442251;" href="#portfolio">Projects</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" style="color: #442251;" href="#about">About me</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" style="color: #442251;" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -41,7 +41,7 @@
                 <div class="row align-items-center ">
                     <div class="col-md-6 text-md-left ">
                         <h1 class="masthead-heading mb-3" style="color: #754887; ">Hi, I'm Loreto</h1>
-                        <p class="masthead-subheading font-weight-light " style="color: #754887;"> I'm a Computer Science Engineering student at the University of Zaragoza and here you can see some of my works </p>
+                        <p class="masthead-subheading font-weight-light " style="color: #754887;"> I'm a computer engineering and I'm trying to take my first steps in UI/UX design. </p>
                     </div>
                     <div class="col-md-6">
                         <img class="masthead-avatar img-fluid mb-5" src="assets\img\portfolio\yo.png" alt="...">
@@ -63,213 +63,177 @@
         </header>
 
         <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="portfolio" style="background-color: #c0a4cd; ">
+        <section class="page-section portfolio" id="portfolio" style="background-color: #754887; ">
             <div class="container">
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase "  style="margin-bottom: 50px; color: #442251;">Portfolio</h2>
-
+                <h2 class="page-section-heading text-left text-uppercase "  style=" color: #ffffff;">Projects</h2>
+                <p class="text-left" style="margin-bottom: 80px; color: #ffffff; font-size: 20px; font-weight: 100;">
+                    Here you can see some of the projects I have worked <br> on, from real projects done in my current job to other <br> projects done during my studies or on my own.
+                </p>
 
                 <!-- Portfolio Grid Items-->
                 <div class="row justify-content-center">
 
-                     <div class="col-md-6 col-lg-4 mb-5" style=" margin:10px; padding:20px; border: 2px solid #754887; border-radius: 15px;">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    <div class="responsive-flex" style="display: flex; flex-wrap: wrap; width: 100%; background-color: #fff; border: 2px solid #754887; border-radius: 20px; padding: 25px; margin: 15px;">
+
+                        <!-- Columna izquierda -->
+                        <div class="responsive-column" style="flex: 1 1 60%; text-align: left;">
+                          <h4 style="color: #442251; font-weight: bold;">Social robots</h4>
+                          <p style="color: #754887; font-size: 18px; font-weight: 300; text-align: justify;">
+                            I am currently working in the AffectiveLab research group at the University 
+                            of Zaragoza, collaborating in a project working with social agents. In my 
+                            case, I have been working with the social robot Sanbot Elf, developing 
+                            intergenerational experiences and researching on human-robot interaction.
+                          </p>
+                      
+                          <p style="color: #442251; font-weight: bold;">View more &#8594;</p>
+                      
+                          <!-- Imagen debajo del texto -->
+                          <div style="margin-top: 20px; width: 100%; display: flex; justify-content: center;">
+                            <img src="assets/img/portfolio/robots.png" alt="Vista adicional del proyecto" class="img-fluid" style="width: 70%; border-radius: 10px;">
+                          </div>
+                        </div>
+                      
+                        <!-- Columna derecha -->
+                        <div class="responsive-column" style="flex: 1 1 35%; display: flex; justify-content: center; align-items: center;">
+                          <img src="assets/img/portfolio/taller.png" alt="Proyecto Spotivibes" class="img-fluid responsive-img" style="padding: 50px; max-width: 100%; border-radius: 10px;">
+                        </div>
+                      
+                    </div>
+
+                    <style>
+                        @media (max-width: 768px) {
+                            .responsive-flex {
+                                flex-direction: column !important;
+                            }
+                            .responsive-column {
+                                width: 100% !important;
+                                flex: none !important;
+                            }
+                            .responsive-img {
+                                padding: 20px !important;
+                                width: 90% !important;
+                                margin: 0 auto;
+                            }
+                            .project-pair {
+                                display: table-column;
+                            }
+                            .project-box {
+                                flex: 1 1 100% !important;
+                                max-width: 100% !important;
+                                margin-bottom: 20px;
+                            }
+                        }
+                      </style>
+                      
+
+                    <!-- CONTENEDOR DE LOS DOS BLOQUES -->
+                    <div class="project-pair" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; width: 100%; margin-top:50px;">
+
+                        <!-- BLOQUE 1 -->
+                        <div class="project-box" style="flex: 1 1 48%; background-color: #fff; border: 2px solid #754887; border-radius: 20px; padding: 25px;">
+                        <div style="text-align: left;">
+                            <h4 style="color: #442251; font-weight: bold;">Prototyping</h4>
+                            <p style="color: #754887; font-size: 18px; font-weight: 300; text-align: justify;">
+                            Here you can see my skills with Figma. In this first project I replicate Grover's Android application.
+                            </p>
+                            <p style="color: #442251; font-weight: bold;">View more &#8594;</p>
+                            <div style="margin-top: 20px; width: 100%; display: flex; justify-content: center;">
+                            <img src="assets/img/portfolio/grover.png" alt="Project One" class="img-fluid" style="width: 70%; border-radius: 10px;">
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/spotivibes.png" alt="..." />
                         </div>
-                    </div>
-
-                     <div class="col-md-6 col-lg-4 mb-5" style=" margin: 10px; padding:20px; border: 2px solid #754887; border-radius: 15px;">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                    
+                        <!-- BLOQUE 2 -->
+                        <div class="project-box" style="flex: 1 1 48%; background-color: #fff; border: 2px solid #754887; border-radius: 20px; padding: 25px;">
+                        <div style="text-align: left;">
+                            <h4 style="color: #442251; font-weight: bold;">UX researching</h4>
+                            <p style="color: #754887; font-size: 18px; font-weight: 300; text-align: justify;">
+                                How can we improve the well-being of shared flats? This project covers the first steps that a researcher should take to tackle the housing problem in Spain.
+                            </p>
+                            <p style="color: #442251; font-weight: bold;">View more &#8594;</p>
+                            <div style="margin-top: 20px; width: 100%; display: flex; justify-content: center;">
+                            <img src="assets/img/portfolio/pisos.png" alt="Project Two" class="img-fluid" style="width: 70%; border-radius: 10px;">
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/loretodibus.png" alt="..." />
                         </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-        <!-- About Section-->
-        <section class="page-section mb-0" id="about"  style=" color: #442251;">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase " style="margin-bottom: 30px; color: #442251;">Tools</h2>
-                
-                <!-- Conocimientos técnicos -->
-                <div class="row">
-                    <div class="col-md-1 text-center">
-                        <i class="fab fa-java fa-4x mb-4"></i>
-                        <p>Java</p>
-                    </div>
-                    <div class="col-md-1 text-center">
-                        <div><i class="fab fa-cuttlefish fa-4x mb-4"></i><i class="fa-solid fa-plus mb-5"></i><i class="fa-solid fa-plus mb-5"></i></div>
-                        <p>C++</p>
-                    </div>
-                    <div class="col-md-1 text-center">
-                        <i class="fab fa-cuttlefish fa-4x mb-4"></i>
-                        <p>C</p>
-                    </div>
-                    <div class="col-md-1 text-center">
-                        <i class="fab fa-golang fa-4x mb-4"></i>
-                        <p>Golang</p>
-                    </div>
-                     <div class="col-md-1 text-center">
-                        <i class="fab fa-sketch fa-4x mb-4"></i>
-                        <p>Ruby</p>
-                    </div>
-                     <div class="col-md-1 text-center">
-                        <i class="fab fa-python fa-4x mb-4"></i>
-                        <p>Python</p>
-                    </div>
-                     <div class="col-md-1 text-center">
-                        <i class="fab fa-kaggle fa-4x mb-4"></i>
-                        <p>Kotlin</p>
-                    </div>
-                     <div class="col-md-1 text-center">
-                        <i class="fab fa-android fa-4x mb-4"></i>
-                        <p>Android Studio</p>
-                    </div>
-                     <div class="col-md-1 text-center">
-                        <i class="fas fa-database fa-4x mb-4"></i>
-                        <p>PostgreSQL</p>
-                    </div>
-                     <div class="col-md-1 text-center">
-                        <i class="fas fa-database fa-4x mb-4"></i>
-                        <p>MySQL</p>
-                    </div>
-                     <div class="col-md-1 text-center">
-                        <i class="fas fa-database fa-4x mb-4"></i>
-                        <p>Oracle</p>
-                    </div>
-                    <div class="col-md-1 text-center">
-                        <i class="fab fa-html5 fa-4x mb-4"></i>
-                        <p>HTML</p>
-                    </div>
-                </div>
-        
-
-        
-                <div class="row">
-                     <div class="col-md-1 text-center">
-                        <i class="fab fa-css3-alt fa-4x mb-4"></i>
-                        <p>CSS</p>
-                    </div>
-                     <div class="col-md-1 text-center">
-                        <i class="fab fa-js fa-4x mb-4"></i>
-                        <p>JavaScript</p>
-                    </div>
-                     <div class="col-md-1 text-center">
-                        <i class="fab fa-python fa-4x mb-4"></i>
-                        <p>Django</p>
-                    </div>
-                     <div class="col-md-1 text-center">
-                        <i class="fab fa-angular fa-4x mb-4"></i>
-                        <p>Angular</p>
-                    </div>
-                     <div class="col-md-1 text-center">
-                        <i class="fab fa-drupal fa-4x mb-4"></i>
-                        <p>Drupal</p>
-                    </div>
-                    <div class="col-md-1 text-center">
-                        <i class="fab fa-galactic-republic fa-4x mb-4"></i>
-                        <p>Kubernetes</p>
-                    </div>
-                     <div class="col-md-1 text-center">
-                        <i class="fab fa-docker fa-4x mb-4"></i>
-                        <p>Docker</p>
-                    </div>
-                     <div class="col-md-1 text-center">
-                        <i class="fab fa-github fa-4x mb-4"></i>
-                        <p>GitHub</p>
-                    </div>
-                     <div class="col-md-1 text-center">
-                        <i class="fas fa-code fa-4x mb-4"></i>
-                        <p>Visual Studio Code</p>
-                    </div>
-                     <div class="col-md-1 text-center">
-                        <i class="fas fa-object-group fa-4x mb-4"></i>
-                        <p>Modelio</p>
-                    </div>
-                    <div class="col-md-1 text-center">
-                        <i class="fas fa-project-diagram fa-4x mb-4"></i>
-                        <p>Drawio</p>
-                    </div>
-                    <div class="col-md-1 text-center">
-                        <i class="fa-brands fa-figma fa-4x mb-4"></i>
-                        <p>Figma</p>
-                    </div>
-                </div>
-        
-
-                <div class="row">
-                     
-                     <div class="col-md-1 text-center">
-                        <i class="fab fa-linux fa-4x mb-4"></i>
-                        <p>Linux</p>
-                    </div>
-                     <div class="col-md-1 text-center">
-                        <i class="fab fa-windows fa-4x mb-4"></i>
-                        <p>Windows</p>
-                    </div>
-                    <div class="col-md-1 text-center">
-                        <i class="fa-brands fa-centos fa-4x mb-4"></i>                       
-                        <p>Centos</p>
-                    </div>
-                    <div class="col-md-1 text-center">
-                        <i class="fa-brands fa-bootstrap fa-4x mb-4"></i>                       
-                        <p>Bootstrap</p>
-                    </div>
-                    <div class="col-md-1 text-center">
-                        <i class="fa-brands fa-node-js fa-4x mb-4"></i>                       
-                        <p>Nodejs</p>
-                    </div>
-                    <div class="col-md-1 text-center">
-                        <i class="fa-brands fa-npm fa-4x mb-4"></i>                       
-                        <p>npm</p>
-                    </div>
-                    <div class="col-md-1 text-center">
-                        <i class="fab fa-trello fa-4x mb-4"></i>
-                        <p>Trello</p>
-                    </div>
-
-                </div>
-        
-
-            </div>
-        </section>
-        
-
-
-        <!-- Contact Section-->
-        <section class="page-section" id="contact" style=" color: #442251; background-color: #c0a4cd; ">
-            <div class="container">
-                <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase " style="margin-bottom: 30px; color: #442251;">Contact Me</h2>
-        
-                <!-- Contact Section Information-->
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-xl-7">
-                        <p class="text-center">You can contact me via email at: loretomatinero@gmail.com</p>
-                        <p class="text-center">Click the button below to contact me via email:</p>
-                        <div class="text-center">
-                            <a href="mailto:loretomatinero@gmail.com" class="btn btn-xl" style="color:#ffff; background-color: #442251;">Contact</a>
                         </div>
+                    
+                    </div>
+
+                     <!-- CONTENEDOR DE LOS DOS BLOQUES -->
+                     <div class="project-pair" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; width: 100%; margin-top:50px;">
+
+                        <!-- BLOQUE 3 -->
+                        <div class="project-box" style="flex: 1 1 48%; background-color: #fff; border: 2px solid #754887; border-radius: 20px; padding: 25px;">
+                        <div style="text-align: left;">
+                            <h4 style="color: #442251; font-weight: bold;">Information architecture</h4>
+                            <p style="color: #754887; font-size: 18px; font-weight: 300; text-align: justify;">
+                                Design of an application to view World Press Photo winning images, access virtual exhibitions, real-time events and educational content.
+                            </p>
+                            <p style="color: #442251; font-weight: bold;">View more &#8594;</p>
+                            <div style="margin-top: 20px; width: 100%; display: flex; justify-content: center;">
+                            <img src="assets/img/portfolio/arquitectura.png" alt="Project One" class="img-fluid" style="width: 70%; border-radius: 10px;">
+                            </div>
+                        </div>
+                        </div>
+                    
+                        <!-- BLOQUE 4 -->
+                        <div class="project-box" style="flex: 1 1 48%; background-color: #fff; border: 2px solid #754887; border-radius: 20px; padding: 25px;">
+                        <div style="text-align: left;">
+                            <h4 style="color: #442251; font-weight: bold;">Visual storytelling</h4>
+                            <p style="color: #754887; font-size: 18px; font-weight: 300; text-align: justify;">
+                                Creating a visual narrative from the observation of an everyday activity, combining storytelling, illustration and graphic analysis to communicate the process clearly and effectively.
+                            </p>
+                            <p style="color: #442251; font-weight: bold;">View more &#8594;</p>
+                            <div style="margin-top: 20px; width: 100%; display: flex; justify-content: center;">
+                            <img src="assets/img/portfolio/storyboard.png" alt="Project Two" class="img-fluid" style="width: 70%; border-radius: 10px;">
+                            </div>
+                        </div>
+                        </div>
+                    
+                    </div>
+
+                     <!-- CONTENEDOR DE LOS DOS BLOQUES -->
+                     <div class="project-pair" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; width: 100%; margin-top:50px;">
+
+                        <!-- BLOQUE 5 -->
+                        <div class="project-box" style="flex: 1 1 48%; background-color: #fff; border: 2px solid #754887; border-radius: 20px; padding: 25px;">
+                        <div style="text-align: left;">
+                            <h4 style="color: #442251; font-weight: bold;">Spotivibes</h4>
+                            <p style="color: #754887; font-size: 18px; font-weight: 300; text-align: justify;">
+                                A web application where you can create your "vibes" by putting on the map the songs that remind you of each of your favorite places. Make playlists and share them with your friends.
+                            </p>
+                            <p style="color: #442251; font-weight: bold;">View more &#8594;</p>
+                            <div style="margin-top: 20px; width: 100%; display: flex; justify-content: center;">
+                            <img src="assets/img/portfolio/spotivebes.png" alt="Project One" class="img-fluid" style="width: 70%; border-radius: 10px;">
+                            </div>
+                        </div>
+                        </div>
+                    
+                        <!-- BLOQUE 6 -->
+                        <div class="project-box" style="flex: 1 1 48%; background-color: #fff; border: 2px solid #754887; border-radius: 20px; padding: 25px;">
+                        <div style="text-align: left;">
+                            <h4 style="color: #442251; font-weight: bold;">Loretodibus</h4>
+                            <p style="color: #754887; font-size: 18px; font-weight: 300; text-align: justify;">
+                                A personal project where I share some of my graphic illustrations. Below are some of the works done, you can see more about my work by clicking on the images or on the following link @loretodibus
+                            </p>
+                            <p style="color: #442251; font-weight: bold;">View more &#8594;</p>
+                            <div style="margin-top: 20px; width: 100%; display: flex; justify-content: center;">
+                            <img src="assets/img/portfolio/dragon.png" alt="Project Two" class="img-fluid" style="width: 70%; border-radius: 10px;">
+                            </div>
+                        </div>
+                        </div>
+                    
                     </div>
                 </div>
-            
+
             </div>
         </section>
-        
+
 
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white" style="background-color: #442251;">
-            <div class="container"><small>Copyright &copy; Loreto Matinero 2023</small></div>
+            <div class="container"><small>Copyright &copy; Loreto Matinero 2025</small></div>
         </div>
 
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
