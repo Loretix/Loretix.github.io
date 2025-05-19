@@ -85,6 +85,43 @@
   box-sizing: border-box;
 }
 
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Animación al hacer scroll (fade + slide) */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover en cada bloque de proyecto */
+.project-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 8px 20px rgba(117, 72, 135, 0.2);
+}
+
+/* Imagen también se amplía un poco al pasar el ratón */
+.project-box img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Asegura que img no se recorte al ampliarse */
+.project-box img {
+  transition: transform 0.3s ease;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
