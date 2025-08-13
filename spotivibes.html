@@ -35,6 +35,165 @@
         </nav>
 
       
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Loreto Matinero</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg text-uppercase fixed-top" style="background-color: #ffffff; " id="mainNav">
+            <div class="container">
+                <button class="navbar-toggler text-uppercase font-weight-bold rounded" style="color: #442251; " type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded view-more" style="color: #442251;" href="index.html">Home</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded view-more" style="color: #442251;" href="index.html#projects">Projects</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded view-more" style="color: #442251;" href="aboutme.html">About me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section id="projects" class="page-section portfolio" id="portfolio" style="background-color: #ffffff; ">
+        <div class="container fade-in">
+          <h1 style="color: #442251; font-weight: bold; margin-top: 20px;">Spotivibes 🎶</h1>
+          <p style="text-align: justify;">
+            Spotivibes is a project for the Web Systems and Technologies course in the Computer Science degree programme at the University of Zaragoza. It involves working in teams to develop a responsive web application. <br>
+            The website developed is a kind of social network that allows users to place songs on a map and share them with friends. The song placed on the map is called a vibe, as it is associated with a place and will remind you of something that happened to you there.<br>
+            The website is not currently active, but the prototypes created for the web and mobile versions can be viewed at the following links.<br>
+          </p>
+      
+          <div class="illustration-gallery">
+            <a href="https://www.figma.com/proto/0iko2tt6Eg1S3ypFFA16ge/Prototipo-Web-Spotivibes?node-id=1-3&starting-point-node-id=1%3A3&t=vMdvoRKgskjLAx0U-1" target="_blank">
+              <img src="assets/img/portfolio/webPrototipo.png" alt="Illustration 1">
+            </a>
+            <a href="https://www.figma.com/proto/0iko2tt6Eg1S3ypFFA16ge/Prototipo-Web-Spotivibes?node-id=206-17918&starting-point-node-id=206%3A17918&t=EtEN2dQxFoKNoAx5-1" target="_blank">
+              <img src="assets/img/portfolio/mobilePrototipo.png" alt="Illustration 2">
+            </a>
+          </div>
+      
+        </div>
+
+
+        <style>
+      
+         .illustration-gallery {
+            display: flex;
+            justify-content: center; /* Centra horizontalmente */
+            gap: 20px;
+            flex-wrap: wrap; /* Para que se adapten en pantallas pequeñas */
+          }
+
+          .illustration-gallery a img {
+            height: 250px; /* Más grande */
+            border-radius: 20px;
+            transition: transform 0.3s ease;
+            object-fit: contain; /* Mantiene proporción sin recortar */
+          }
+
+          .illustration-gallery a:hover img {
+            transform: scale(1.05);
+          }
+
+          .back-link {
+            display: inline-block;
+            margin-top: 50px;
+            font-weight: 600;
+            color: #442251;
+            text-decoration: none;
+            border: 2px solid #754887;
+            padding: 10px 20px;
+            border-radius: 10px;
+            transition: 0.3s;
+          }
+      
+          .back-link:hover {
+            background-color: #f3e6ff;
+          }
+
+          body {
+            font-family: 'Lato', sans-serif;
+            color: #442251;
+            background-color: #ffffff;
+            padding-top: 100px;
+          }
+          .container {
+            max-width: 960px;
+            margin: auto;
+            padding: 0 20px 60px;
+          }
+          h1, h2 {
+            text-align: center;
+            color: #442251;
+          }
+          h1 {
+            font-size: 36px;
+            margin-bottom: 40px;
+          }
+          h2 {
+            font-size: 28px;
+            margin-top: 60px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #754887;
+            padding-bottom: 5px;
+          }
+          p {
+            font-size: 18px;
+            text-align: justify;
+            color: #754887;
+            margin-bottom: 20px;
+          }
+        </style>
+        </section>
+
+
+        <div class="copyright py-4 text-center text-white" style="background-color: #442251;">
+            <div class="container"><small>Copyright &copy; Loreto Matinero 2025</small></div>
+        </div>          
+          
+  
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+              const elements = document.querySelectorAll('.fade-in');
+          
+              const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                  if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                  }
+                });
+              }, { threshold: 0.1 });
+          
+              elements.forEach(el => observer.observe(el));
+            });
+          </script>
+          
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
 
 
 
