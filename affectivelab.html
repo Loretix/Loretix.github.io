@@ -34,7 +34,189 @@
             </div>
         </nav>
 
-      
+        <section id="projects" class="page-section portfolio" id="portfolio" style="background-color: #ffffff; ">
+        
+        <div class="container">
+          <h1>AffectiveLab 🤖</h1>
+
+          <p class="intro">
+            I am currently working in the <b>AffectiveLab</b> research group at the University of Zaragoza, collaborating on projects with social agents.
+            My focus has been on the <b>Sanbot Elf</b> social robot, developing intergenerational experiences and researching human–robot interaction.
+            Below are three key experiences I have participated in.
+          </p>
+
+          <!-- Experience 1 -->
+          <div class="phase-card">
+            <h2>Intergenerational Experience</h2>
+            <p>
+              An interactive family puzzle game guided by the robot, carried out at Ibercaja during Robotics Week.
+              The activity studied interaction patterns between participants of different ages through observation.
+            </p>
+            <div class="image-grid">
+              <img src="assets/ibercaja1.png" alt="Ibercaja experience photo 1">
+              <img src="assets/ibercaja2.png" alt="Ibercaja experience photo 2">
+            </div>
+          </div>
+
+          <!-- Experience 2 -->
+          <div class="phase-card">
+            <h2>School Workshop with Children</h2>
+            <p>
+              Two interactive games with children: one where the robot reacted and displayed emotions, and another where children told stories and the robot guessed if they were true or false.
+              Afterwards, a collaborative workshop was held to gather children's ideas about possible uses for robots in their school or community.
+            </p>
+            <div class="image-grid">
+              <img src="assets/school1.png" alt="School workshop photo 1">
+              <img src="assets/school2.png" alt="School workshop photo 2">
+            </div>
+          </div>
+
+          <!-- Experience 3 -->
+          <div class="phase-card">
+            <h2>Residency Project: Timeline Application</h2>
+            <p>
+              An application designed for elderly people to store and revisit their memories.
+              Memories could include a name, date, description, and a related song.
+              The app could be used in companionship, or independently with guidance.
+            </p>
+            <div class="image-grid">
+              <img src="assets/residence1.png" alt="Residence project photo 1">
+              <img src="assets/residence2.png" alt="Residence project photo 2">
+            </div>
+          </div>
+        </div>
+ 
+
+
+        <style>
+
+          .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+          }
+
+          .image-grid img {
+            width: 400px;
+            height: 400px; /* Fija la altura de todas las imágenes */
+            object-fit: cover; /* Recorta la imagen manteniendo la proporción */
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+          }
+
+
+            
+            .project-cover {
+              width: 100%;
+              border-radius: 12px;
+              margin-bottom: 20px;
+              box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            }
+
+            .links-container {
+              display: flex;
+              gap: 15px;
+              flex-wrap: wrap;
+              margin-bottom: 30px;
+            }
+
+            .project-link {
+              display: inline-block;
+              background-color: #754887;
+              color: #fff;
+              padding: 10px 20px;
+              border-radius: 8px;
+              font-weight: 600;
+              text-decoration: none;
+              transition: background-color 0.3s ease;
+            }
+
+            .project-link:hover {
+              background-color: #442251;
+            }
+
+
+          body {
+            font-family: 'Lato', sans-serif;
+            background-color: #ffffff;
+            color: #442251;
+            padding-top: 60px;
+          }
+
+          .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 0 20px 60px;
+          }
+
+          h1 {
+            text-align: center;
+            font-size: 38px;
+            margin-bottom: 40px;
+            color: #442251;
+          }
+
+          .intro, .conclusion {
+            font-size: 18px;
+            text-align: justify;
+            color: #754887;
+            margin-bottom: 40px;
+          }
+
+          .phase-card {
+            background: #fdfaff;
+            border-left: 6px solid #754887;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            position: relative;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+          }
+
+          .phase-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+          }
+
+          .phase-number {
+            position: absolute;
+            top: -15px;
+            left: -15px;
+            background: #754887;
+            color: #fff;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 10px 15px;
+            border-radius: 50%;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+          }
+
+          .phase-card h2 {
+            margin-top: 0;
+            font-size: 24px;
+            color: #442251;
+          }
+
+          .phase-card p, .phase-card li {
+            font-size: 17px;
+            color: #754887;
+          }
+
+          ul {
+            padding-left: 20px;
+          }
+
+          iframe {
+            border: 2px solid #754887;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(68, 34, 81, 0.1);
+            margin-top: 20px;
+          }
+
+        </style>
+        </section>
 
 
 
